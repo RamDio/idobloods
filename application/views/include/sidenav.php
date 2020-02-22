@@ -28,7 +28,7 @@
       <nav>
         <ul>
           <li>
-          <a href="#">
+          <a href="<?php echo site_url("page/index"); ?>">
             <span><i class="fas fa-columns"></i></span>
             <span>DASHBOARD</span>
           </a>
@@ -40,7 +40,7 @@
           </a>
           </li>
           <li>
-          <a href="#">
+          <a href="<?php echo site_url("user/manage"); ?>">
             <span><i class="fas fa-users"></i></span>
             <span>MANAGE DONORS</span>
           </a>
