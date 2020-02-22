@@ -56,7 +56,7 @@ body {
 	color: #e70f0f;
 }
 .logo  i {
-	font-size: 22px;
+	font-size: 40px;
 }
 .logo span {
 	margin-left: 15px;
@@ -96,6 +96,7 @@ body {
 	background-color: #e70f0f;
 	z-index: 1;
 	display: none;
+	margin-top: 90px;
 }
 .side-nav.visible {
 	display: block;
