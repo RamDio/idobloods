@@ -34,6 +34,14 @@ class User extends CI_Controller{
 
     }
 
+    function countuser(){
+        $this->load->model('User_model');
+        $data['query']=$this->User_model->get_user();
+
+        $this->load->view('bloodgroup',$data);
+
+    }
+
 
 }
 

@@ -18,7 +18,9 @@
 				</div>
 				<div class="widget">
 					<div class="title">Number of blood stock</div>
-					<div class="chart"></div>
+					<div class="chart">
+						
+					</div>
 				</div>
 				<!-- <div class="widget">
 					<div class="title">Number of comments</div>
