@@ -18,25 +18,54 @@
 </div>
 
 <div class="container">
+     <form name="createUser" action="<?php echo site_url('user/registration');?>" method="post">
     <div class="row">
+       
         <div class="col-md-12">
             <div class="form-group">
                 <label >Last Name</label>
                 <input type="text" name="lastname" value="" class="form-control">
+                <?php echo form_error('lastname'); ?>
             </div>
             <div class="form-group">
                 <label >First Name</label>
                 <input type="text" name="firstname" value="" class="form-control">
+                <?php echo form_error('firstname'); ?>
             </div>
             <div class="form-group">
                 <label >Address</label>
                 <input type="text" name="address" value="" class="form-control">
+                <?php echo form_error('address'); ?>
             </div>
             <div class="form-group">
-                <label >Blood Type</label>
-                <input type="text" name="bloodtype" value="" class="form-control">
+              <label>Bloodtype</label>
+              <input type="text" name="bloodtype" value="" class="form-control" list="bloodtype" />
+              <datalist id="bloodtype">
+                <option value="A"></option>
+                <option value="B"></option>
+                <option value="AB"></option>
+                <option value="O"></option>
+                <option value="A+"></option>
+                <option value="A-"></option>
+                <option value="B+"></option>
+                <option value="B-"></option>
+                <option value="AB+"></option>
+                <option value="AB-"></option>
+                <option value="O+"></option>
+                <option value="O-"></option>
+              </datalist>
+              <span class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <div class="modal-footer">
+              <a href='<?php echo base_url();?>user/manage()' class="btn btn-danger btn-md"> Go Back</a>
+              <input type="submit" name="insert" value="Add" class="btn btn-primary">
+                </div>
+                
             </div>
         </div>
+    </div>
+        </form>
     </div>
 </div>
 
